@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VisionFlux — Politique de confidentialité</title>
+  <style>
+    :root { color-scheme: light dark; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.55; }
+    body { max-width: 720px; margin: 2rem auto; padding: 0 1.25rem; }
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.1rem; margin-top: 1.5rem; }
+    a { color: #0066cc; }
+    ul { padding-left: 1.25rem; }
+    li { margin: 0.35rem 0; }
+  </style>
+</head>
+<body>
+  <h1>Politique de confidentialité — VisionFlux</h1>
+  <p><strong>Dernière mise à jour :</strong> 6 juin 2026</p>
+
+  <h2>1. Responsable du traitement</h2>
+  <p>VisionFlux est publié par <strong>Cécile Candau (Picaza)</strong>. Pour toute question relative à la confidentialité ou à vos droits, contactez : <a href="mailto:contact@picaza.fr">contact@picaza.fr</a>.</p>
+
+  <h2>2. Résumé</h2>
+  <p>VisionFlux est une application macOS locale de <strong>capture, enregistrement, montage, conversion et diffusion vidéo</strong>. Nous ne vendons pas vos données, ne diffusons pas de publicité et <strong>ne suivons pas votre activité à des fins publicitaires</strong> (aucun traceur, aucune analytique tiers).</p>
+  <p>En règle générale, vos vidéos, audios, fichiers et réglages <strong>restent sur votre Mac</strong>, dans les dossiers que vous choisissez. VisionFlux <strong>ne dispose pas de serveur</strong> recevant automatiquement vos enregistrements ou votre activité.</p>
+  <p>Des données peuvent quitter votre appareil uniquement lorsque <strong>vous l’initiez</strong> : diffusion vers une plateforme de streaming, copie de fichiers vers un autre emplacement, envoi volontaire d’un rapport de diagnostic, ou achat d’abonnement géré par Apple.</p>
+
+  <h2>3. Données traitées</h2>
+
+  <h3>3.1 Vidéo, audio et écran</h3>
+  <ul>
+    <li><strong>Sources de capture :</strong> flux provenant des périphériques que vous sélectionnez (caméra, carte de capture USB/HDMI, micro, interfaces audio).</li>
+    <li><strong>Capture d’écran :</strong> si vous choisissez la source « Écran », VisionFlux capture l’affichage de votre Mac via les API système (ScreenCaptureKit), uniquement pour l’aperçu, l’enregistrement ou la diffusion que vous lancez.</li>
+    <li><strong>Caméra réseau :</strong> si vous configurez une URL de flux (RTSP, RTMP, HTTP, etc.), l’application se connecte à cette adresse pour afficher et traiter le flux. Cette connexion est initiée par vous ; l’URL est stockée localement dans vos réglages.</li>
+    <li><strong>Traitement local :</strong> filtres image, effets audio, incrustations, encodage et conversion sont réalisés sur votre Mac. Les flux ne sont pas envoyés à Picaza.</li>
+  </ul>
+
+  <h3>3.2 Fichiers et projets</h3>
+  <ul>
+    <li><strong>Enregistrements :</strong> fichiers vidéo créés dans le dossier de destination que vous désignez.</li>
+    <li><strong>Transfert automatique :</strong> copie optionnelle vers un second dossier que vous configurez (toujours sur votre disque ou un volume accessible depuis votre Mac).</li>
+    <li><strong>Montage et conversion :</strong> accès aux fichiers média que vous importez ou sélectionnez via les dialogues système macOS.</li>
+    <li><strong>Réglages exportés/importés :</strong> fichiers JSON de configuration que vous enregistrez ou ouvrez volontairement.</li>
+  </ul>
+
+  <h3>3.3 Préférences de l’application</h3>
+  <p>VisionFlux enregistre localement (notamment via <strong>UserDefaults</strong>, dans le conteneur de l’application) :</p>
+  <ul>
+    <li>sources et périphériques sélectionnés ;</li>
+    <li>dossiers favoris (via signets sécurisés macOS) ;</li>
+    <li>réglages d’image, d’audio, d’encodage et de l’interface ;</li>
+    <li>destinations de diffusion RTMP que vous configurez (nom, URL serveur, identifiants si vous les saisissez) ;</li>
+    <li>langue de l’interface.</li>
+  </ul>
+  <p>Ces données ne sont pas synchronisées avec nos serveurs.</p>
+
+  <h3>3.4 Diffusion en direct (streaming)</h3>
+  <p>Lorsque vous démarrez une diffusion, VisionFlux envoie le flux vidéo et audio vers la <strong>plateforme ou le serveur RTMP que vous avez configuré</strong> (YouTube, Twitch, serveur personnel, etc.). Cette transmission est nécessaire au service de diffusion que vous avez choisi et est régie par la politique de confidentialité de ce tiers. Picaza n’intercepte ni n’enregistre ces flux sur ses propres serveurs.</p>
+
+  <h3>3.5 Journaux de diagnostic</h3>
+  <p>Pour le dépannage, VisionFlux écrit des <strong>fichiers texte techniques</strong> sur votre Mac, dans le dossier Application Support du conteneur de l’application (<code>HotfixDiagnosticLogs</code>). Ces journaux peuvent contenir :</p>
+  <ul>
+    <li>horodatages, version de l’app et du système ;</li>
+    <li>état de la capture, de l’enregistrement, de la diffusion et de la conversion ;</li>
+    <li>messages d’erreur et traces techniques ;</li>
+    <li>chemins de fichiers et dossiers que vous utilisez ;</li>
+    <li>extraits des journaux système (OSLog) du processus VisionFlux.</li>
+  </ul>
+  <p>Les <strong>clés de stream et mots de passe RTMP sont masqués</strong> dans les exports de diagnostic. Des instantanés automatiques peuvent être écrits périodiquement et à la fermeture de l’application. Vous pouvez consulter ce dossier ou exporter les journaux depuis le menu <strong>Aide</strong>.</p>
+
+  <h3>3.6 Rapports de plantage</h3>
+  <p>En cas d’arrêt inattendu de l’application, VisionFlux peut, au prochain lancement, vous <strong>proposer d’envoyer un rapport de diagnostic</strong>. L’envoi est <strong>facultatif</strong> : rien n’est transmis sans votre accord.</p>
+  <p>Si vous acceptez, l’application prépare un fichier regroupant les journaux de la session concernée et ouvre votre client de messagerie (Mail) adressé à <a href="mailto:contact@picaza.fr">contact@picaza.fr</a>. <strong>Vous devez confirmer l’envoi</strong> dans Mail ; Picaza ne reçoit aucun rapport automatiquement en arrière-plan.</p>
+
+  <h3>3.7 Abonnements (Mac App Store)</h3>
+  <p>Les achats et abonnements sont traités par <strong>Apple</strong> via StoreKit. Nous recevons uniquement l’information nécessaire pour activer les fonctionnalités associées (état d’abonnement sur l’appareil). Nous n’avons pas accès à vos coordonnées bancaires. Le traitement des données de paiement est régi par la politique de confidentialité d’Apple.</p>
+
+  <h2>4. Permissions macOS</h2>
+  <p>Selon les fonctionnalités que vous utilisez, VisionFlux peut demander :</p>
+  <ul>
+    <li><strong>Caméra :</strong> aperçu et enregistrement depuis les périphériques vidéo.</li>
+    <li><strong>Microphone :</strong> enregistrement audio depuis le micro ou l’entrée audio de capture, si vous l’activez.</li>
+    <li><strong>Enregistrement de l’écran :</strong> uniquement pour la source « Écran ».</li>
+    <li><strong>Accès aux fichiers :</strong> via les dialogues système « Ouvrir / Enregistrer » et les dossiers que vous autorisez ; l’application n’accède qu’aux emplacements que vous désignez.</li>
+    <li><strong>Réseau (client) :</strong> connexion aux flux réseau, aux serveurs RTMP de diffusion et téléchargement éventuel de composants techniques (par ex. binaire ffmpeg) lorsque requis par une fonctionnalité — toujours au service d’une action que vous initiez ou d’un besoin technique local documenté.</li>
+  </ul>
+
+  <h2>5. Partage et transfert de données</h2>
+  <table style="width:100%; border-collapse:collapse; font-size:0.95rem;">
+    <tr style="border-bottom:1px solid #ccc;"><th style="text-align:left; padding:0.4rem 0;">Situation</th><th style="text-align:left; padding:0.4rem 0;">Données concernées</th><th style="text-align:left; padding:0.4rem 0;">Destinataire</th></tr>
+    <tr style="border-bottom:1px solid #eee;"><td style="padding:0.4rem 0;">Usage normal</td><td style="padding:0.4rem 0;">Aucune transmission à Picaza</td><td style="padding:0.4rem 0;">—</td></tr>
+    <tr style="border-bottom:1px solid #eee;"><td style="padding:0.4rem 0;">Diffusion RTMP</td><td style="padding:0.4rem 0;">Flux vidéo/audio</td><td style="padding:0.4rem 0;">Plateforme configurée par vous</td></tr>
+    <tr style="border-bottom:1px solid #eee;"><td style="padding:0.4rem 0;">Rapport de plantage (opt-in)</td><td style="padding:0.4rem 0;">Journaux techniques</td><td style="padding:0.4rem 0;">contact@picaza.fr (via votre Mail)</td></tr>
+    <tr style="border-bottom:1px solid #eee;"><td style="padding:0.4rem 0;">Abonnement</td><td style="padding:0.4rem 0;">Données d’achat</td><td style="padding:0.4rem 0;">Apple (StoreKit)</td></tr>
+    <tr><td style="padding:0.4rem 0;">Copie / sauvegarde</td><td style="padding:0.4rem 0;">Vos fichiers</td><td style="padding:0.4rem 0;">Emplacement choisi par vous (NAS, cloud, etc.)</td></tr>
+  </table>
+
+  <h2>6. Durée de conservation</h2>
+  <ul>
+    <li><strong>Vos enregistrements et projets :</strong> conservés tant que vous ne les supprimez pas.</li>
+    <li><strong>Réglages :</strong> conservés dans le conteneur de l’application jusqu’à réinitialisation ou désinstallation.</li>
+    <li><strong>Journaux de diagnostic :</strong> conservés localement ; les archives les plus anciennes peuvent être purgées automatiquement (les fichiers récents et le journal en cours sont conservés).</li>
+    <li><strong>Rapports envoyés par e-mail :</strong> conservés par Picaza le temps nécessaire au support technique, puis supprimés ou anonymisés selon les besoins.</li>
+  </ul>
+
+  <h2>7. Sécurité</h2>
+  <p>VisionFlux fonctionne dans le <strong>bac à sable macOS (App Sandbox)</strong>. L’accès au réseau, aux périphériques et aux fichiers est limité aux autorisations déclarées et aux choix que vous faites dans l’interface système.</p>
+
+  <h2>8. Suivi et publicité</h2>
+  <p>VisionFlux <strong>ne pratique pas le suivi publicitaire</strong> et ne déclare aucune collecte de données à des fins de tracking dans son manifeste de confidentialité Apple (<code>PrivacyInfo.xcprivacy</code> : <code>NSPrivacyTracking</code> = false).</p>
+
+  <h2>9. Mineurs</h2>
+  <p>VisionFlux ne cible pas spécifiquement les enfants et ne collecte pas sciemment de données personnelles d’enfants.</p>
+
+  <h2>10. Modifications de cette politique</h2>
+  <p>Cette politique peut être mise à jour pour refléter l’évolution de l’application. La date en tête de page indique la version en vigueur. Les changements importants pourront être mentionnés dans les notes de version de l’App Store.</p>
+
+  <h2>11. Vos droits</h2>
+  <p>Selon votre pays de résidence (notamment le <strong>RGPD</strong> pour l’Union européenne), vous pouvez demander des informations sur les données traitées, demander leur rectification ou leur suppression lorsqu’elles sont sous notre responsabilité (par exemple un rapport de plantage que vous nous avez envoyé), ou exercer vos droits en nous contactant à <a href="mailto:contact@picaza.fr">contact@picaza.fr</a>.</p>
+  <p>Pour les données stockées uniquement sur votre Mac, vous pouvez les supprimer directement (fichiers, réglages, désinstallation de l’application).</p>
+
+  <p><a href="index.html">← Retour</a> · <a href="support.html">Assistance</a></p>
+</body>
+</html>
