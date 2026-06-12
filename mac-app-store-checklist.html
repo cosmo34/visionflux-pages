@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oculus — Checklist Mac App Store</title>
+  <style>
+    :root { color-scheme: light dark; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.5; }
+    body { max-width: 760px; margin: 2rem auto; padding: 0 1.25rem; }
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.05rem; margin-top: 1.4rem; }
+    .ok { color: #1a7f37; }
+    .warn { color: #9a6700; }
+    .block { color: #cf222e; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+    th, td { border: 1px solid #ccc; padding: 0.45rem 0.6rem; text-align: left; vertical-align: top; }
+    a { color: #0066cc; }
+  </style>
+</head>
+<body>
+  <h1>Checklist Mac App Store — Oculus</h1>
+  <p>État technique du dépôt après préparation App Store (juin 2026).</p>
+
+  <h2>Prêt dans le code</h2>
+  <table>
+    <tr><th>Élément</th><th>État</th></tr>
+    <tr><td>Bac à sable (App Sandbox)</td><td class="ok">Activé</td></tr>
+    <tr><td>Caméra / micro</td><td class="ok">Entitlements + chaînes Info.plist</td></tr>
+    <tr><td>Fichiers utilisateur</td><td class="ok">NSOpenPanel + security-scoped bookmarks</td></tr>
+    <tr><td>Exceptions « home-relative-path »</td><td class="ok">Supprimées (rejet App Store fréquent)</td></tr>
+    <tr><td>Manifeste de confidentialité (PrivacyInfo.xcprivacy)</td><td class="ok">UserDefaults, horodatages fichiers</td></tr>
+    <tr><td>Chiffrement (export compliance)</td><td class="ok">ITSAppUsesNonExemptEncryption = NO</td></tr>
+    <tr><td>Catégorie App Store</td><td class="ok">Vidéo</td></tr>
+    <tr><td>Hardened Runtime</td><td class="ok">Activé</td></tr>
+    <tr><td>Pages confidentialité / assistance</td><td class="ok"><a href="https://cosmo34.github.io/visionflux-pages/">cosmo34.github.io/visionflux-pages</a></td></tr>
+  </table>
+
+  <h2>À faire avant soumission</h2>
+  <table>
+    <tr><th>Élément</th><th>Action</th></tr>
+    <tr><td class="block">Icône application</td><td class="warn">Ajouter toutes les tailles dans <code>Assets.xcassets/AppIcon</code> + icône marketing 1024×1024 dans App Store Connect</td></tr>
+    <tr><td>Compte développeur</td><td>Programme Apple Developer actif, contrat « Apps » signé</td></tr>
+    <tr><td>Certificat Mac App Store</td><td>Distribution + profil de provisioning Mac App Store</td></tr>
+    <tr><td>Identifiant d’app</td><td class="ok"><code>fr.VisionFlux</code> (Xcode + portail développeur)</td></tr>
+    <tr><td>Archive Xcode</td><td>Product → Archive → Distribute → Mac App Store Connect</td></tr>
+    <tr><td>Captures d’écran</td><td>Minimum requis par Apple (tailles macOS actuelles)</td></tr>
+    <tr><td>Email support</td><td class="ok"><code>contact@picaza.fr</code> (pages légales à jour)</td></tr>
+    <tr><td>Tests réels</td><td>Capture USB/HDMI, enregistrement, veille, dossiers NAS si pertinent</td></tr>
+  </table>
+
+  <h2>URLs App Store Connect</h2>
+  <ul>
+    <li><strong>Politique de confidentialité :</strong> <a href="https://cosmo34.github.io/visionflux-pages/privacy-policy.html">https://cosmo34.github.io/visionflux-pages/privacy-policy.html</a></li>
+    <li><strong>URL d’assistance :</strong> <a href="https://cosmo34.github.io/visionflux-pages/support.html">https://cosmo34.github.io/visionflux-pages/support.html</a></li>
+    <li><strong>Accueil pages publiques :</strong> <a href="https://cosmo34.github.io/visionflux-pages/">https://cosmo34.github.io/visionflux-pages/</a> (dépôt public <code>cosmo34/visionflux-pages</code>)</li>
+  </ul>
+
+  <h2>Notes de revue Apple</h2>
+  <p>Prévoir une note pour le relecteur : périphériques de capture externes, dossiers choisis par l’utilisateur, absence de serveur distant, fonctionnement hors ligne.</p>
+
+  <p><a href="index.html">← Retour</a></p>
+</body>
+</html>

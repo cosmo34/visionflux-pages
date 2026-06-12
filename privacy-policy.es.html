@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oculus — Política de privacidad</title>
+  <style>
+    :root { color-scheme: light dark; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.55; }
+    body { max-width: 720px; margin: 2rem auto; padding: 0 1.25rem; }
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.1rem; margin-top: 1.5rem; }
+    a { color: #0066cc; }
+    ul { padding-left: 1.25rem; }
+    li { margin: 0.35rem 0; }
+  </style>
+</head>
+<body>
+  <p class="lang" style="font-size:0.9rem;margin-bottom:1rem;"><a href="privacy-policy.html">Français</a> · <a href="privacy-policy.en.html">English</a> · <strong>Español</strong></p>
+  <h1>Política de privacidad — Oculus</h1>
+  <p><strong>Última actualización:</strong> 6 de junio de 2026</p>
+
+  <h2>1. Responsable del tratamiento</h2>
+  <p>Oculus es publicado por <strong>Cécile Candau (Picaza)</strong>. Para cualquier consulta sobre privacidad o para ejercer sus derechos, contacte: <a href="mailto:contact@picaza.fr">contact@picaza.fr</a>.</p>
+
+  <h2>2. Resumen</h2>
+  <p>Oculus es una aplicación macOS local de <strong>captura, grabación, montaje, conversión y difusión de vídeo</strong>. No vendemos sus datos, no mostramos publicidad y <strong>no hacemos seguimiento de su actividad con fines publicitarios</strong> (sin rastreadores ni analítica de terceros).</p>
+  <p>En general, sus vídeos, audios, archivos y ajustes <strong>permanecen en su Mac</strong>, en las carpetas que usted elija. Oculus <strong>no dispone de un servidor</strong> que reciba automáticamente sus grabaciones o su actividad.</p>
+  <p>Los datos pueden salir de su dispositivo solo cuando <strong>usted lo inicia</strong>: difusión a una plataforma, copia de archivos, envío voluntario de un informe de diagnóstico o compra de suscripción gestionada por Apple.</p>
+
+  <h2>3. Datos tratados</h2>
+
+  <h3>3.1 Vídeo, audio y pantalla</h3>
+  <ul>
+    <li><strong>Fuentes de captura:</strong> flujos de los dispositivos que seleccione (cámara, tarjeta USB/HDMI, micrófono, interfaces de audio).</li>
+    <li><strong>Captura de pantalla:</strong> si elige la fuente «Pantalla», Oculus captura la pantalla de su Mac mediante las API del sistema (ScreenCaptureKit) solo para la vista previa, grabación o difusión que usted inicie.</li>
+    <li><strong>Cámara de red:</strong> si configura una URL de flujo (RTSP, RTMP, HTTP, etc.), la aplicación se conecta a esa dirección. Usted inicia la conexión; la URL se almacena localmente en sus ajustes.</li>
+    <li><strong>Tratamiento local:</strong> filtros de imagen, efectos de audio, superposiciones, codificación y conversión se realizan en su Mac. Los flujos no se envían a Picaza.</li>
+  </ul>
+
+  <h3>3.2 Archivos y proyectos</h3>
+  <ul>
+    <li><strong>Grabaciones:</strong> archivos de vídeo creados en la carpeta de destino que designe.</li>
+    <li><strong>Transferencia automática:</strong> copia opcional a una segunda carpeta que configure.</li>
+    <li><strong>Montaje y conversión:</strong> acceso a archivos multimedia que importe o seleccione mediante los diálogos del sistema macOS.</li>
+    <li><strong>Ajustes exportados/importados:</strong> archivos JSON de configuración que guarde o abra voluntariamente.</li>
+  </ul>
+
+  <h3>3.3 Preferencias de la aplicación</h3>
+  <p>Oculus guarda localmente (incluido <strong>UserDefaults</strong> en el contenedor de la aplicación):</p>
+  <ul>
+    <li>fuentes y dispositivos seleccionados;</li>
+    <li>carpetas favoritas (mediante marcadores seguros de macOS);</li>
+    <li>ajustes de imagen, audio, codificación e interfaz;</li>
+    <li>destinos de difusión RTMP que configure;</li>
+    <li>idioma de la interfaz.</li>
+  </ul>
+  <p>Estos datos no se sincronizan con nuestros servidores.</p>
+
+  <h3>3.4 Difusión en directo</h3>
+  <p>Al iniciar una difusión, Oculus envía el flujo de vídeo y audio a la <strong>plataforma o servidor RTMP que haya configurado</strong>. Esta transmisión es necesaria para el servicio elegido y se rige por la política de privacidad de ese tercero. Picaza no intercepta ni registra estos flujos en sus propios servidores.</p>
+
+  <h3>3.5 Registros de diagnóstico</h3>
+  <p>Para la resolución de problemas, Oculus escribe <strong>archivos técnicos de texto</strong> en su Mac (<code>HotfixDiagnosticLogs</code>). Estos registros pueden incluir marcas de tiempo, estado de captura/grabación/difusión/conversión, mensajes de error, rutas de archivos y extractos de registros del sistema.</p>
+  <p>Las <strong>claves de stream y contraseñas RTMP se ocultan</strong> en las exportaciones de diagnóstico. Puede consultar esta carpeta o exportar registros desde el menú <strong>Ayuda</strong>.</p>
+
+  <h3>3.6 Informes de cierre inesperado</h3>
+  <p>En caso de cierre inesperado, Oculus puede, en el siguiente inicio, <strong>proponer enviar un informe de diagnóstico</strong>. El envío es <strong>opcional</strong>.</p>
+  <p>Si acepta, la aplicación prepara un archivo y abre su cliente de correo dirigido a <a href="mailto:contact@picaza.fr">contact@picaza.fr</a>. <strong>Debe confirmar el envío</strong> en Mail.</p>
+
+  <h3>3.7 Suscripciones (Mac App Store)</h3>
+  <p>Las compras y suscripciones son procesadas por <strong>Apple</strong> mediante StoreKit. Solo recibimos la información necesaria para activar las funciones asociadas. No tenemos acceso a sus datos bancarios.</p>
+
+  <h2>4. Permisos de macOS</h2>
+  <ul>
+    <li><strong>Cámara:</strong> vista previa y grabación desde dispositivos de vídeo.</li>
+    <li><strong>Micrófono:</strong> grabación de audio si lo activa.</li>
+    <li><strong>Grabación de pantalla:</strong> solo para la fuente «Pantalla».</li>
+    <li><strong>Acceso a archivos:</strong> mediante diálogos del sistema y carpetas que autorice.</li>
+    <li><strong>Red (cliente):</strong> flujos de red, servidores RTMP y componentes técnicos embebidos cuando sea necesario.</li>
+  </ul>
+
+  <h2>5. Compartición de datos</h2>
+  <p>En uso normal, no hay transmisión a Picaza. La difusión RTMP envía el flujo a la plataforma configurada por usted. Los informes de cierre (opcionales) se envían por su cliente de correo. Las suscripciones son gestionadas por Apple.</p>
+
+  <h2>6. Conservación</h2>
+  <ul>
+    <li><strong>Grabaciones y proyectos:</strong> hasta que los elimine.</li>
+    <li><strong>Ajustes:</strong> en el contenedor de la aplicación hasta reinstalación.</li>
+    <li><strong>Registros de diagnóstico:</strong> localmente; los archivos antiguos pueden purgarse automáticamente.</li>
+  </ul>
+
+  <h2>7. Seguridad</h2>
+  <p>Oculus funciona en el <strong>App Sandbox de macOS</strong>.</p>
+
+  <h2>8. Seguimiento y publicidad</h2>
+  <p>Oculus <strong>no practica seguimiento publicitario</strong> (<code>NSPrivacyTracking</code> = false).</p>
+
+  <h2>9. Menores</h2>
+  <p>Oculus no está dirigido específicamente a menores y no recopila deliberadamente datos personales de menores.</p>
+
+  <h2>10. Modificaciones</h2>
+  <p>Esta política puede actualizarse. La fecha al inicio indica la versión vigente.</p>
+
+  <h2>11. Sus derechos</h2>
+  <p>Según su país de residencia (incluido el <strong>RGPD</strong> en la Unión Europea), puede contactarnos en <a href="mailto:contact@picaza.fr">contact@picaza.fr</a> para ejercer sus derechos.</p>
+  <p>Los datos almacenados solo en su Mac pueden eliminarse directamente.</p>
+
+  <p><a href="index.es.html">← Volver</a> · <a href="support.es.html">Asistencia</a></p>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oculus — Asistencia</title>
+  <style>
+    :root { color-scheme: light dark; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.55; }
+    body { max-width: 720px; margin: 2rem auto; padding: 0 1.25rem; }
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.1rem; margin-top: 1.5rem; }
+    h3 { font-size: 1rem; margin-top: 1rem; }
+    a { color: #0066cc; }
+    code { font-size: 0.9em; }
+    ul, ol { padding-left: 1.25rem; }
+    li { margin: 0.35rem 0; }
+    .lang { font-size: 0.9rem; margin-bottom: 1rem; }
+  </style>
+</head>
+<body>
+  <p class="lang"><a href="support.html">Français</a> · <a href="support.en.html">English</a> · <strong>Español</strong></p>
+
+  <h1>Asistencia — Oculus</h1>
+  <p>Oculus es un estudio de vídeo nativo para Mac: <strong>captura</strong>, <strong>emisión en directo</strong>, <strong>montaje</strong> y <strong>conversión</strong> en una sola aplicación, optimizada para Apple Silicon.</p>
+
+  <h2>Contacto</h2>
+  <p>Soporte técnico: <a href="mailto:contact@picaza.fr">contact@picaza.fr</a></p>
+  <p>Indique la versión de Oculus, la versión de macOS y una descripción del problema. Adjunte los registros de diagnóstico si es posible (véase más abajo).</p>
+
+  <h2>Requisitos mínimos</h2>
+  <ul>
+    <li>macOS 14.0 (Sonoma) o posterior</li>
+    <li>Mac con Apple Silicon (M1 o posterior)</li>
+    <li>Dispositivo de captura compatible con AVFoundation (UVC, cámara integrada, muchas tarjetas externas)</li>
+  </ul>
+
+  <h2>Inicio rápido</h2>
+  <ol>
+    <li>Conecte su fuente de vídeo (y audio si es necesario).</li>
+    <li>Autorice el acceso a <strong>Cámara</strong>, <strong>Micrófono</strong> y, si usa la fuente Pantalla, <strong>Grabación de pantalla</strong> en Ajustes del Sistema.</li>
+    <li>Elija la carpeta de grabación y, si es necesario, la carpeta de transferencia en Ajustes.</li>
+    <li>Seleccione la pestaña deseada (Captura, Difusión, Montaje o Conversión).</li>
+    <li>Compruebe la vista previa y lance la acción (REC, Difusión ON, conversión, etc.).</li>
+  </ol>
+
+  <h2>Funciones por pestaña</h2>
+
+  <h3>Captura</h3>
+  <ul>
+    <li>Fuentes: cámara USB/HDMI, captura de pantalla, flujos de red (RTSP, RTMP, HTTP, HLS…).</li>
+    <li>Grabación H.264, HEVC o ProRes; filtros de imagen; superposiciones multicapa.</li>
+    <li>Transferencia automática opcional a una segunda carpeta.</li>
+  </ul>
+
+  <h3>Difusión</h3>
+  <ul>
+    <li>Emisión RTMP/RTMPS a YouTube, Twitch, Facebook, Vimeo, Kick, Instagram o servidor personalizado.</li>
+    <li>Pipeline independiente de la captura; efectos instantáneos; grabación simultánea posible.</li>
+    <li>Configure servidor y clave de stream en el panel Difusión.</li>
+  </ul>
+
+  <h3>Montaje</h3>
+  <ul>
+    <li>Línea de tiempo multipista; arrastrar y soltar medios; transiciones y animaciones.</li>
+    <li>Exportación a los formatos de entrega configurados.</li>
+  </ul>
+
+  <h3>Conversión</h3>
+  <ul>
+    <li>Conversión por lotes a MP4, MOV, M4V, ProRes, MKV, AVI, AV1, etc.</li>
+    <li>Añada archivos o una carpeta completa; elija formato, resolución y destino.</li>
+    <li>Versión gratuita: 3 vídeos máx., 2 min cada uno (suscripción Conversión para uso ilimitado).</li>
+  </ul>
+
+  <h2>Suscripciones</h2>
+  <p>Las suscripciones son gestionadas por la <strong>Mac App Store</strong>. Puede suscribirse por pestaña (Captura, Difusión, Montaje, Conversión) o elegir el acceso <strong>Completo</strong>. Restaure sus compras desde la hoja de suscripción si es necesario.</p>
+
+  <h2>Permisos de macOS</h2>
+  <ul>
+    <li><strong>Cámara / Micrófono</strong> — captura y grabación de audio.</li>
+    <li><strong>Grabación de pantalla</strong> — solo para la fuente «Pantalla».</li>
+    <li><strong>Archivos</strong> — carpetas elegidas mediante los diálogos del sistema.</li>
+  </ul>
+
+  <h2>Problemas frecuentes</h2>
+  <ul>
+    <li><strong>Sin imagen:</strong> compruebe el cable HDMI/USB, la fuente en la mesa y seleccione el dispositivo correcto en Oculus.</li>
+    <li><strong>Fuente externa (Blackmagic, ATEM):</strong> la resolución real sigue la señal de entrada; los ajustes HD/FHD/4K no imponen la resolución del hardware.</li>
+    <li><strong>Difusión bloqueada:</strong> compruebe la clave de stream, el protocolo (RTMPS para Twitch) y su conexión de red.</li>
+    <li><strong>Conversión fallida:</strong> compruebe el acceso a la carpeta de destino; vuelva a abrirla desde el panel Conversión.</li>
+    <li><strong>Carpetas vacías en la barra lateral:</strong> vuelva a abrir la carpeta en Ajustes → Transferencia / destino.</li>
+    <li><strong>Superposición no encontrada:</strong> si el archivo se movió, use «Buscar el archivo…» en la capa correspondiente.</li>
+  </ul>
+
+  <h2>Registros e informes</h2>
+  <ul>
+    <li>Menú <strong>Ayuda → Abrir carpeta de registros…</strong></li>
+    <li>Menú <strong>Ayuda → Exportar registros de diagnóstico…</strong> (también en Ajustes)</li>
+    <li>Tras un cierre inesperado, Oculus puede proponer enviar un informe por correo a <a href="mailto:contact@picaza.fr">contact@picaza.fr</a> (opcional; confirme el envío en Mail).</li>
+  </ul>
+
+  <h2>Privacidad</h2>
+  <p>Consulte la <a href="privacy-policy.es.html">política de privacidad</a>.</p>
+
+  <p><a href="index.es.html">← Volver</a></p>
+</body>
+</html>
